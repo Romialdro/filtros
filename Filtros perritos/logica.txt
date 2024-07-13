@@ -1,0 +1,96 @@
+Lógica del Algoritmo
+Inicialización:
+
+Cargar el contenido del documento HTML (DOMContentLoaded).
+Definir los elementos del DOM y las variables necesarias.
+Datos Iniciales:
+
+Cargar los datos de las mascotas (en este caso, se usan datos de ejemplo directamente en el código).
+Renderización Inicial:
+
+Mostrar todas las mascotas en la interfaz de usuario utilizando la función renderPets.
+Filtrado de Mascotas:
+
+Aplicar filtros según los valores introducidos por el usuario:
+Tipo
+Raza
+Color
+Edad
+Descripción breve
+Filtrar los datos y actualizar la vista con las mascotas que cumplen con los criterios.
+Interacción del Usuario:
+
+Manejar eventos de entrada del usuario en los campos de filtro.
+Manejar el clic en el botón "Ver Más" para mostrar un mensaje de alerta y cambiar el color del botón.
+Limpieza de Filtros:
+
+Limpiar todos los campos de filtro al hacer clic en el botón "Limpiar Filtros".
+Volver a mostrar todas las mascotas.
+Diagrama de Flujo (Flujorama)
+El diagrama de flujo a continuación muestra el proceso del algoritmo desde la carga inicial hasta la limpieza de filtros.
+
+plaintext
+Copiar código
+START
+   |
+   V
+Cargar documento HTML
+   |
+   V
+Definir variables y elementos del DOM
+   |
+   V
+Cargar datos de mascotas
+   |
+   V
+Mostrar todas las mascotas (renderPets)
+   |
+   V
+¿Se aplica algún filtro?
+   |      |
+   |      V
+   |   Aplicar filtros a los datos
+   |      |
+   |      V
+   |   Mostrar datos filtrados (renderPets)
+   |      |
+   |      V
+   |   ¿El usuario hizo clic en "Ver Más"?
+   |      |
+   |      V
+   |   Mostrar mensaje de alerta y cambiar color del botón
+   |      |
+   |      V
+   |   ¿El usuario hizo clic en "Limpiar Filtros"?
+   |      |
+   |      V
+   |   Limpiar campos de filtro
+   |      |
+   |      V
+   |   Mostrar todas las mascotas (renderPets)
+   |
+   V
+   END
+Explicación del Flujo
+Inicio:
+
+El algoritmo comienza cuando el documento HTML se ha cargado completamente.
+Definición de Variables:
+
+Se definen las variables y se seleccionan los elementos del DOM necesarios para manipular los filtros y la visualización de los datos.
+Carga de Datos:
+
+Los datos de las mascotas se definen en un array (en un caso real, podrían provenir de una fuente externa como un archivo JSON).
+Renderización Inicial:
+
+La función renderPets se llama para mostrar todas las mascotas en la interfaz de usuario al inicio.
+Aplicación de Filtros:
+
+Si el usuario ingresa valores en los filtros, la función filterPets se encarga de aplicar estos filtros a la lista de mascotas y actualizar la vista.
+Interacción del Usuario:
+
+Cuando el usuario hace clic en "Ver Más", se muestra un mensaje de alerta y se cambia el color del botón.
+Cuando el usuario hace clic en "Limpiar Filtros", se limpian los campos de filtro y se muestran todas las mascotas nuevamente.
+Fin:
+
+El proceso continúa en un ciclo, esperando nuevas acciones del usuario y respondiendo a los eventos de entrada.

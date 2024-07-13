@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(153, 226, 200); /* Color de fondo claro */
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* Fondo blanco para el contenedor de filtros */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.filter-container input,
+.filter-container button {
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    width: 300px; /* Ajustado para mayor espacio */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding se incluye en el ancho */
+}
+
+.filter-container input {
+    background-color: #fafafa; /* Fondo suave para los inputs */
+}
+
+.filter-container button {
+    background-color: #007bff; /* Color de fondo azul para los botones */
+    color: #fff; /* Texto blanco para los botones */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3; /* Color azul oscuro al pasar el mouse */
+}
+
+.filter-container button:active {
+    background-color: #004094; /* Color azul más oscuro al hacer clic */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px; /* Ajustado para mayor espacio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333; /* Color de texto más oscuro para los títulos */
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666; /* Color de texto más suave para los párrafos */
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745; /* Color verde para los botones */
+    color: #fff; /* Texto blanco para los botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.card button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+}
+
+.card button:active {
+    background-color: #1e7e34; /* Color verde más oscuro al hacer clic */
+}
+
+/* Estilo para el contenedor del filtro */
+.filter-container {
+    background-image: url('img/perrito.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+/* Estilo para que el contenedor del mapa sea responsivo */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 5px; /* Opcional: Para bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Para sombra sutil */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Color de fondo del footer */
+}
+
+footer .container {
+    max-width: 800px; /* Limitar el ancho del footer */
+}
+
+footer h4, footer h5 {
+    font-size: 1.25rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .btn-floating {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+footer .btn-floating:hover {
+    background-color: #ffffff;
+    color: #343a40;
+    transform: scale(1.1);
+}
+
+
